@@ -12,7 +12,7 @@ Bash script that renames a directory using the date from the oldest photo or vid
 ```
 ### Arguments
 1. `[DIRECTORY]` - directory to scan for media. ** Default: `.`**
-2. `[TAG\_FORMAT]` - Tag format for renaming of the directory. ** Default: `-%Y-%m %f`**. Interpreted sequences are:
+2. `[TAG_FORMAT]` - Tag format for renaming of the directory. ** Default: `-%Y-%m %f`**. Interpreted sequences are:
   * `%f` current directory name.
   *  all sequances listed in `man date`.
 
@@ -20,7 +20,7 @@ Bash script that renames a directory using the date from the oldest photo or vid
 ```
 ./exif-date-tagger.sh /path/to/photoalbum
 
-`` 
+``` 
 The script will now scan recursively scan through the whole directory for photos and videos and find the oldest capture date. This is being used to rename the directory into:
 `YYYY-MM photoalbum`
 
